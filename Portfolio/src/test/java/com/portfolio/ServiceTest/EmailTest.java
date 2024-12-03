@@ -16,20 +16,20 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 @SpringBootTest
 @Transactional
 public class EmailTest {
-	@BeforeAll
-	public static void setup() {
-	    Dotenv dotenv = Dotenv.configure().directory("src/main/resources").filename("chane2.env").load();
-	    System.setProperty("DB_HOST", dotenv.get("DB_HOST"));
-	    System.setProperty("DB_PORT", dotenv.get("DB_PORT"));
-	    System.setProperty("DB_NAME", dotenv.get("DB_NAME"));
-	    System.setProperty("DB_USER", dotenv.get("DB_USER"));
-	    System.setProperty("DB_PASSWORD", dotenv.get("DB_PASSWORD"));
-	    System.setProperty("MAIL_HOST", dotenv.get("MAIL_HOST"));
-	    System.setProperty("MAIL_PORT", dotenv.get("MAIL_PORT"));
-	    System.setProperty("MAIL_USERNAME", dotenv.get("MAIL_USERNAME"));
-	    System.setProperty("MAIL_PASSWORD", dotenv.get("MAIL_PASSWORD"));
-
-	}
+//	@BeforeAll
+//	public static void setup() {
+//	    Dotenv dotenv = Dotenv.configure().directory("src/main/resources").filename("chane2.env").load();
+//	    System.setProperty("DB_HOST", dotenv.get("DB_HOST"));
+//	    System.setProperty("DB_PORT", dotenv.get("DB_PORT"));
+//	    System.setProperty("DB_NAME", dotenv.get("DB_NAME"));
+//	    System.setProperty("DB_USER", dotenv.get("DB_USER"));
+//	    System.setProperty("DB_PASSWORD", dotenv.get("DB_PASSWORD"));
+//	    System.setProperty("MAIL_HOST", dotenv.get("MAIL_HOST"));
+//	    System.setProperty("MAIL_PORT", dotenv.get("MAIL_PORT"));
+//	    System.setProperty("MAIL_USERNAME", dotenv.get("MAIL_USERNAME"));
+//	    System.setProperty("MAIL_PASSWORD", dotenv.get("MAIL_PASSWORD"));
+//
+//	}
 
 
     @Autowired
